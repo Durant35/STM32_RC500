@@ -1,4 +1,5 @@
 ### RF reader for M1 Card based on STM32 and MFRC500
+
 **1. ** RF reader module Schematic and PCB design.
 
 **2. ** STM32 code from drivers to apps follow hierarchical principle.
@@ -16,8 +17,9 @@
 ├── db.json
 └── package.json
 ```
-3. DLL API used SerialPort
-4. MFC Application using DLL APIs for module & software system testing demo. 
+**3. ** DLL API used SerialPort
+
+**4. ** MFC Application using DLL APIs for module & software system testing demo. 
 
 
 MFRC500_API
