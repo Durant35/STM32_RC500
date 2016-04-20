@@ -37,7 +37,4 @@ RF_Reader.PcbDoc
 
 RF_Reader.pdf
 	射频读卡模块原理图
-
-基于MFRC500和STM32的RFID读写器设计与实现.pdf
-	毕业论文
 ```
