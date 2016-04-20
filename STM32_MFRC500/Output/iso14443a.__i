@@ -1,0 +1,5 @@
+-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Libraries\CMSIS\CoreSupport -I..\Libraries\CMSIS\DeviceSupport -I..\User -I..\Libraries\StdPeriph_Driver\inc
+-I S:\KEIL\ARM\RV31\INC
+-I S:\KEIL\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include
+-I S:\KEIL\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include
+-DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD -o ..\output\iso14443a.o --omf_browse ..\output\iso14443a.crf --depend ..\output\iso14443a.d "..\User\ISO14443A.c"

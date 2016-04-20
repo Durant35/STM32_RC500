@@ -1,0 +1,13 @@
+..\output\key.o: ..\User\key.c
+..\output\key.o: ..\User\key.h
+..\output\key.o: ..\Libraries\CMSIS\DeviceSupport\stm32f10x.h
+..\output\key.o: ..\Libraries\CMSIS\CoreSupport\core_cm3.h
+..\output\key.o: S:\KEIL\ARM\ARMCC\bin\..\include\stdint.h
+..\output\key.o: ..\Libraries\CMSIS\DeviceSupport\system_stm32f10x.h
+..\output\key.o: ..\User\stm32f10x_conf.h
+..\output\key.o: ..\Libraries\StdPeriph_Driver\inc\stm32f10x_gpio.h
+..\output\key.o: ..\Libraries\CMSIS\DeviceSupport\stm32f10x.h
+..\output\key.o: ..\Libraries\StdPeriph_Driver\inc\stm32f10x_rcc.h
+..\output\key.o: ..\Libraries\StdPeriph_Driver\inc\stm32f10x_usart.h
+..\output\key.o: ..\User\led.h
+..\output\key.o: ..\User\SysTick.h

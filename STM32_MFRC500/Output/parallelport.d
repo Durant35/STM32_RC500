@@ -1,0 +1,11 @@
+..\output\parallelport.o: ..\User\ParallelPort.c
+..\output\parallelport.o: ..\User\ParallelPort.h
+..\output\parallelport.o: ..\Libraries\CMSIS\DeviceSupport\stm32f10x.h
+..\output\parallelport.o: ..\Libraries\CMSIS\CoreSupport\core_cm3.h
+..\output\parallelport.o: S:\KEIL\ARM\ARMCC\bin\..\include\stdint.h
+..\output\parallelport.o: ..\Libraries\CMSIS\DeviceSupport\system_stm32f10x.h
+..\output\parallelport.o: ..\User\stm32f10x_conf.h
+..\output\parallelport.o: ..\Libraries\StdPeriph_Driver\inc\stm32f10x_gpio.h
+..\output\parallelport.o: ..\Libraries\CMSIS\DeviceSupport\stm32f10x.h
+..\output\parallelport.o: ..\Libraries\StdPeriph_Driver\inc\stm32f10x_rcc.h
+..\output\parallelport.o: ..\Libraries\StdPeriph_Driver\inc\stm32f10x_usart.h
