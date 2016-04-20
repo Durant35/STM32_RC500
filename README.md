@@ -1,7 +1,7 @@
 ### RF reader for M1 Card based on STM32 and MFRC500
-**1. **RF reader module Schematic and PCB design.
+**1. ** RF reader module Schematic and PCB design.
 
-**2. **STM32 code from drivers to apps follow hierarchical principle.
+**2. ** STM32 code from drivers to apps follow hierarchical principle.
 ```cpp
 .
 ├── .d
