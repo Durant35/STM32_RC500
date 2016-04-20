@@ -1,0 +1,443 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\MFRC500_DEMO.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\MFRC500_DEMO.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 MFRC500_DEMO"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "MFRC500_DEMO 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2016",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_MFRC500_DEMO_DIALOG DIALOGEX 0, 0, 561, 291
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "MFRC500_DEMO"
+FONT 9, "宋体"
+BEGIN
+    PUSHBUTTON      "打开串口",IDC_BTN_PORT,31,29,50,14
+    PUSHBUTTON      "寻卡",IDC_BUTTON2,271,43,39,14
+    EDITTEXT        IDC_UID,159,43,97,14,ES_AUTOHSCROLL
+    GROUPBOX        "串口设置",IDC_STATIC,18,59,78,220
+    LTEXT           "串口",IDC_STATIC,27,76,17,8
+    LTEXT           "波特率",IDC_STATIC,27,113,25,8
+    LTEXT           "数据位",IDC_STATIC,27,152,25,8
+    LTEXT           "校验位",IDC_STATIC,27,192,25,8
+    LTEXT           "停止位",IDC_STATIC,27,233,25,8
+    COMBOBOX        IDC_PORTNO,35,91,49,60,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_BAUDRATE,35,130,49,60,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_DATABITS,35,169,49,60,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_PARITY,35,211,50,60,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_STOPBITS,35,250,49,60,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    GROUPBOX        "密钥设置",IDC_STATIC,337,20,207,78
+    CONTROL         "A密钥",IDC_RADIOA,"Button",BS_AUTORADIOBUTTON,364,35,36,
+                    10
+    CONTROL         "B密钥",IDC_RADIOB,"Button",BS_AUTORADIOBUTTON,408,35,36,
+                    10
+    LTEXT           "密钥：",IDC_STATIC,354,56,25,8
+    EDITTEXT        IDC_KEY,383,54,94,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "默认密钥",IDC_BUTTON1,487,54,50,14
+    PUSHBUTTON      "密钥验证",IDC_BUTTON3,487,75,50,14
+    LTEXT           "  读写块操作/电子钱包操作前需验证密钥！！",IDC_INFOS,
+                    353,73,123,20
+    GROUPBOX        "电子钱包",IDC_STATIC,337,107,208,172
+    GROUPBOX        "读写块操作",IDC_STATIC,112,107,208,172
+    GROUPBOX        "开启卡片",IDC_STATIC,113,20,207,78
+    LTEXT           "序列号：",IDC_STATIC,123,46,33,8
+    LTEXT           " 状态：",IDC_STATIC,125,69,29,8
+    EDITTEXT        IDC_UID_STATUS,159,67,152,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_SECTOR_RW,166,125,37,78,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_BLOCK_RW,255,124,37,60,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "扇区号：",IDC_STATIC,132,127,33,8
+    LTEXT           " 块号：",IDC_STATIC,224,126,29,8
+    EDITTEXT        IDC_BLOCK0,160,153,145,14,ES_AUTOHSCROLL
+    LTEXT           "块0信息：",IDC_STATIC,122,156,37,8
+    EDITTEXT        IDC_BLOCK1,160,177,145,14,ES_AUTOHSCROLL
+    LTEXT           "块1信息：",IDC_STATIC,122,180,37,8
+    EDITTEXT        IDC_BLOCK2,160,203,145,14,ES_AUTOHSCROLL
+    LTEXT           "块2信息：",IDC_STATIC,122,206,37,8
+    EDITTEXT        IDC_BLOCK3A,160,228,53,14,ES_AUTOHSCROLL
+    LTEXT           "块3信息：",IDC_STATIC,122,230,37,8
+    PUSHBUTTON      "读块",IDC_BUTTON4,196,253,39,14
+    PUSHBUTTON      "写块",IDC_BUTTON5,257,253,39,14
+    PUSHBUTTON      "读扇区",IDC_BUTTON6,136,253,39,14
+    COMBOBOX        IDC_SECTOR_WALLET,396,126,37,78,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_BLOCK_WALLET,486,125,37,60,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "扇区号：",IDC_STATIC,362,128,33,8
+    LTEXT           " 块号：",IDC_STATIC,454,127,29,8
+    EDITTEXT        IDC_REMAIN,402,154,113,14,ES_AUTOHSCROLL
+    LTEXT           "余额：",IDC_STATIC,373,157,26,8
+    PUSHBUTTON      "钱包初始化",IDC_BUTTON7,359,175,50,14
+    PUSHBUTTON      "查询余额",IDC_BUTTON8,478,175,50,14
+    EDITTEXT        IDC_WALLET_STATUS,381,253,149,14,ES_AUTOHSCROLL
+    LTEXT           "状态：",IDC_STATIC,353,255,24,8
+    EDITTEXT        IDC_RECHARGE,392,205,103,14,ES_AUTOHSCROLL
+    LTEXT           "充值金额：",IDC_STATIC,351,208,40,8
+    PUSHBUTTON      "充值",IDC_BUTTON9,499,205,32,14
+    EDITTEXT        IDC_DEBIT,392,228,103,14,ES_AUTOHSCROLL
+    LTEXT           "消费金额：",IDC_STATIC,351,231,40,8
+    PUSHBUTTON      "消费",IDC_BUTTON10,499,228,32,14
+    COMBOBOX        IDC_SECTOR_KEY,500,33,37,78,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "扇区号：",IDC_STATIC,466,35,33,8
+    EDITTEXT        IDC_BLOCK3B,215,228,38,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_BLOCK3C,256,228,53,14,ES_AUTOHSCROLL
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "MFRC500_DEMO Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "MFRC500_DEMO\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2016\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "MFRC500_DEMO.EXE\0"
+            VALUE "ProductName", "MFRC500_DEMO 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_MFRC500_DEMO_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 554
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 284
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_MFRC500_DEMO_DIALOG DLGINIT
+BEGIN
+    IDC_PORTNO, 0x403, 5, 0
+0x4f43, 0x314d, "\000" 
+    IDC_PORTNO, 0x403, 5, 0
+0x4f43, 0x324d, "\000" 
+    IDC_PORTNO, 0x403, 5, 0
+0x4f43, 0x334d, "\000" 
+    IDC_PORTNO, 0x403, 5, 0
+0x4f43, 0x344d, "\000" 
+    IDC_PORTNO, 0x403, 5, 0
+0x4f43, 0x354d, "\000" 
+    IDC_PORTNO, 0x403, 5, 0
+0x4f43, 0x364d, "\000" 
+    IDC_PORTNO, 0x403, 5, 0
+0x4f43, 0x374d, "\000" 
+    IDC_PORTNO, 0x403, 5, 0
+0x4f43, 0x384d, "\000" 
+    IDC_PORTNO, 0x403, 5, 0
+0x4f43, 0x394d, "\000" 
+    IDC_BAUDRATE, 0x403, 5, 0
+0x3639, 0x3030, "\000" 
+    IDC_BAUDRATE, 0x403, 7, 0
+0x3131, 0x3235, 0x3030, "\000" 
+    IDC_DATABITS, 0x403, 2, 0
+0x0035, 
+    IDC_DATABITS, 0x403, 2, 0
+0x0036, 
+    IDC_DATABITS, 0x403, 2, 0
+0x0037, 
+    IDC_DATABITS, 0x403, 2, 0
+0x0038, 
+    IDC_PARITY, 0x403, 5, 0
+0x4f4e, 0x454e, "\000" 
+    IDC_PARITY, 0x403, 4, 0
+0x444f, 0x0044, 
+    IDC_PARITY, 0x403, 5, 0
+0x5645, 0x4e45, "\000" 
+    IDC_STOPBITS, 0x403, 2, 0
+0x0031, 
+    IDC_STOPBITS, 0x403, 4, 0
+0x2e31, 0x0035, 
+    IDC_STOPBITS, 0x403, 2, 0
+0x0032, 
+    IDC_SECTOR_RW, 0x403, 2, 0
+0x0030, 
+    IDC_SECTOR_RW, 0x403, 2, 0
+0x0031, 
+    IDC_SECTOR_RW, 0x403, 2, 0
+0x0032, 
+    IDC_SECTOR_RW, 0x403, 2, 0
+0x0033, 
+    IDC_SECTOR_RW, 0x403, 2, 0
+0x0034, 
+    IDC_SECTOR_RW, 0x403, 2, 0
+0x0035, 
+    IDC_SECTOR_RW, 0x403, 2, 0
+0x0036, 
+    IDC_SECTOR_RW, 0x403, 2, 0
+0x0037, 
+    IDC_SECTOR_RW, 0x403, 2, 0
+0x0038, 
+    IDC_SECTOR_RW, 0x403, 2, 0
+0x0039, 
+    IDC_SECTOR_RW, 0x403, 3, 0
+0x3031, "\000" 
+    IDC_SECTOR_RW, 0x403, 3, 0
+0x3131, "\000" 
+    IDC_SECTOR_RW, 0x403, 3, 0
+0x3231, "\000" 
+    IDC_SECTOR_RW, 0x403, 3, 0
+0x3331, "\000" 
+    IDC_SECTOR_RW, 0x403, 3, 0
+0x3431, "\000" 
+    IDC_SECTOR_RW, 0x403, 3, 0
+0x3531, "\000" 
+    IDC_BLOCK_RW, 0x403, 2, 0
+0x0030, 
+    IDC_BLOCK_RW, 0x403, 2, 0
+0x0031, 
+    IDC_BLOCK_RW, 0x403, 2, 0
+0x0032, 
+    IDC_BLOCK_RW, 0x403, 2, 0
+0x0033, 
+    IDC_SECTOR_WALLET, 0x403, 2, 0
+0x0030, 
+    IDC_SECTOR_WALLET, 0x403, 2, 0
+0x0031, 
+    IDC_SECTOR_WALLET, 0x403, 2, 0
+0x0032, 
+    IDC_SECTOR_WALLET, 0x403, 2, 0
+0x0033, 
+    IDC_SECTOR_WALLET, 0x403, 2, 0
+0x0034, 
+    IDC_SECTOR_WALLET, 0x403, 2, 0
+0x0035, 
+    IDC_SECTOR_WALLET, 0x403, 2, 0
+0x0036, 
+    IDC_SECTOR_WALLET, 0x403, 2, 0
+0x0037, 
+    IDC_SECTOR_WALLET, 0x403, 2, 0
+0x0038, 
+    IDC_SECTOR_WALLET, 0x403, 2, 0
+0x0039, 
+    IDC_SECTOR_WALLET, 0x403, 3, 0
+0x3031, "\000" 
+    IDC_SECTOR_WALLET, 0x403, 3, 0
+0x3131, "\000" 
+    IDC_SECTOR_WALLET, 0x403, 3, 0
+0x3231, "\000" 
+    IDC_SECTOR_WALLET, 0x403, 3, 0
+0x3331, "\000" 
+    IDC_SECTOR_WALLET, 0x403, 3, 0
+0x3431, "\000" 
+    IDC_SECTOR_WALLET, 0x403, 3, 0
+0x3531, "\000" 
+    IDC_BLOCK_WALLET, 0x403, 2, 0
+0x0030, 
+    IDC_BLOCK_WALLET, 0x403, 2, 0
+0x0031, 
+    IDC_BLOCK_WALLET, 0x403, 2, 0
+0x0032, 
+    IDC_BLOCK_WALLET, 0x403, 2, 0
+0x0033, 
+    IDC_SECTOR_KEY, 0x403, 2, 0
+0x0030, 
+    IDC_SECTOR_KEY, 0x403, 2, 0
+0x0031, 
+    IDC_SECTOR_KEY, 0x403, 2, 0
+0x0032, 
+    IDC_SECTOR_KEY, 0x403, 2, 0
+0x0033, 
+    IDC_SECTOR_KEY, 0x403, 2, 0
+0x0034, 
+    IDC_SECTOR_KEY, 0x403, 2, 0
+0x0035, 
+    IDC_SECTOR_KEY, 0x403, 2, 0
+0x0036, 
+    IDC_SECTOR_KEY, 0x403, 2, 0
+0x0037, 
+    IDC_SECTOR_KEY, 0x403, 2, 0
+0x0038, 
+    IDC_SECTOR_KEY, 0x403, 2, 0
+0x0039, 
+    IDC_SECTOR_KEY, 0x403, 3, 0
+0x3031, "\000" 
+    IDC_SECTOR_KEY, 0x403, 3, 0
+0x3131, "\000" 
+    IDC_SECTOR_KEY, 0x403, 3, 0
+0x3231, "\000" 
+    IDC_SECTOR_KEY, 0x403, 3, 0
+0x3331, "\000" 
+    IDC_SECTOR_KEY, 0x403, 3, 0
+0x3431, "\000" 
+    IDC_SECTOR_KEY, 0x403, 3, 0
+0x3531, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 MFRC500_DEMO(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\MFRC500_DEMO.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

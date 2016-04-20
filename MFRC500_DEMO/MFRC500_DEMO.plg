@@ -1,0 +1,38 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: MFRC500_DEMO - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\Chen\AppData\Local\Temp\RSP7641.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Debug/" /Fp"Debug/MFRC500_DEMO.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\Workspace\VC Workspace\MFRC500_DEMO\MFRC500_DEMODlg.cpp"
+]
+Creating command line "cl.exe @C:\Users\Chen\AppData\Local\Temp\RSP7641.tmp" 
+Creating temporary file "C:\Users\Chen\AppData\Local\Temp\RSP7652.tmp" with contents
+[
+MFRC500_API.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/MFRC500_DEMO.pdb" /debug /machine:I386 /out:"Debug/MFRC500_DEMO.exe" /pdbtype:sept /libpath:"./libs" 
+".\Debug\MFRC500_DEMO.obj"
+".\Debug\MFRC500_DEMODlg.obj"
+".\Debug\StdAfx.obj"
+".\Debug\MFRC500_DEMO.res"
+]
+Creating command line "link.exe @C:\Users\Chen\AppData\Local\Temp\RSP7652.tmp"
+<h3>Output Window</h3>
+Compiling...
+MFRC500_DEMODlg.cpp
+Linking...
+Creating command line "bscmake.exe /nologo /o"Debug/MFRC500_DEMO.bsc"  ".\Debug\StdAfx.sbr" ".\Debug\MFRC500_DEMO.sbr" ".\Debug\MFRC500_DEMODlg.sbr""
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+MFRC500_DEMO.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
