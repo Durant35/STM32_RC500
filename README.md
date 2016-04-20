@@ -22,6 +22,7 @@
 
 **4. ** MFC Application using DLL APIs for module & software system testing demo. 
 
+**5. ** Directory Content.
 ```cpp
 MFRC500_API
 	应用程序DLL API，VC6.0 工程源代码
