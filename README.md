@@ -4,24 +4,25 @@
 
 **2. ** STM32 code from drivers to apps follow hierarchical principle.
 ```cpp
-.
-├── .d
-├── node_modules
-├── public
-├── scaffolds
-├── source
-|   ├── _posts
-|   └── img
-├── themes
-├── _config.yml
-├── db.json
-└── package.json
+├── main.c
+├── Apps.c
+|   └── App.h
+├── ISO14443A.c
+|   └── ISO14443A.h
+├── MFRC500.c
+|   └── MFRC500.h
+├── ParallelPort.c
+|   └── ParallelPort.h
+├── USART.c
+|   └── USART.h
+├── PcComm.c
+└── └── PcComm.h
 ```
 **3. ** DLL API used SerialPort
 
 **4. ** MFC Application using DLL APIs for module & software system testing demo. 
 
-
+```cpp
 MFRC500_API
 	应用程序DLL API，VC6.0 工程源代码
 
@@ -39,3 +40,4 @@ RF_Reader.pdf
 
 基于MFRC500和STM32的RFID读写器设计与实现.pdf
 	毕业论文
+```

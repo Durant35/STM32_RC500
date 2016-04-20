@@ -1,0 +1,11 @@
+..\output\led.o: ..\User\Led.c
+..\output\led.o: ..\User\Led.h
+..\output\led.o: ..\Libraries\CMSIS\DeviceSupport\stm32f10x.h
+..\output\led.o: ..\Libraries\CMSIS\CoreSupport\core_cm3.h
+..\output\led.o: S:\KEIL\ARM\ARMCC\bin\..\include\stdint.h
+..\output\led.o: ..\Libraries\CMSIS\DeviceSupport\system_stm32f10x.h
+..\output\led.o: ..\User\stm32f10x_conf.h
+..\output\led.o: ..\Libraries\StdPeriph_Driver\inc\stm32f10x_gpio.h
+..\output\led.o: ..\Libraries\CMSIS\DeviceSupport\stm32f10x.h
+..\output\led.o: ..\Libraries\StdPeriph_Driver\inc\stm32f10x_rcc.h
+..\output\led.o: ..\Libraries\StdPeriph_Driver\inc\stm32f10x_usart.h
