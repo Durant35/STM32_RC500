@@ -1,4 +1,4 @@
-### RF reader for M1 Card based on STM32 and MFRC500
+### Graduate Design: RF reader for M1 Card based on STM32 and MFRC500
 
 **1. ** RF reader module Schematic and PCB design.
 
