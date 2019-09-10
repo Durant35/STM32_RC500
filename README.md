@@ -1,8 +1,8 @@
 ### Graduate Design: RF reader for M1 Card based on STM32 and MFRC500
 
-**1. ** RF reader module Schematic and PCB design.
+**1.** RF reader module Schematic and PCB design.
 
-**2. ** STM32 code from drivers to apps follow hierarchical principle.
+**2.** STM32 code from drivers to apps follow hierarchical principle.
 ```cpp
 ├── main.c
 ├── Apps.c
@@ -18,11 +18,11 @@
 ├── PcComm.c
 └── └── PcComm.h
 ```
-**3. ** DLL API used SerialPort
+**3.** DLL API used SerialPort
 
-**4. ** MFC Application using DLL APIs for module & software system testing demo. 
+**4.** MFC Application using DLL APIs for module & software system testing demo. 
 
-**5. ** Directory Content.
+**5.** Directory Content.
 ```cpp
 MFRC500_API
 	应用程序DLL API，VC6.0 工程源代码
